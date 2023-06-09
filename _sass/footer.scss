@@ -1,7 +1,12 @@
 .footer-links {
+<<<<<<< HEAD
 	min-width: 300px;
+=======
+	width: 100%;
+>>>>>>> a2f36c8 (fix contact width)
 	margin: 10px;
 	padding: 0;
+	min-width: 300px;
 
 	@media #{$tablet} {
 		-webkit-flex: 1 0 180px;
