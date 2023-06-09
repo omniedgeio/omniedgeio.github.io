@@ -32,11 +32,13 @@
 			<div class="container">
 				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
 				<div class="footer-columns">
+					<ul class="footer-links">
+						<li><strong>Contact name:</strong> Yong QIAN</li>
+							<li><strong>Email:</strong> y.qian@omniedge.io</li>
+							<li><strong> Tel:</strong> +1 864 451 4066</li>
+					</ul>
 					{% for column in site.data.footer %}
 					<ul class="footer-links">
-							<li><strong>Contact name:</strong> Yong QIAN</li>
-							<li><strong>Contact email:</strong> y.qian@omniedge.io</li>
-							<li><strong>Contact tel:</strong> +1 864 451 4066</li>
 						{% for link in column.links %}
 							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
 								{% if link.social_icon %}
