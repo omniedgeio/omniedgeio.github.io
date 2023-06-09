@@ -12,9 +12,9 @@ disqus_shortname:
 logo: images/logo.png
 description: Make tech to product
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: OmniEdge
+  email: hello@omniedge.io
+  twitter: omniedgeio
 social:
   name: omniedgeio
   links:

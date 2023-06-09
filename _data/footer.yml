@@ -1,10 +1,10 @@
 - links:
-  - name: About
-    link: /about/
-  - name: Contact
-    link: /contact/
-- links:
   - name: Twitter
     link: https://twitter.com/omniedgeio
     social_icon: Twitter
+    new_window: true
+- links:
+  - name: LinkedLn
+    link: https://www.linkedin.com/company/omniedge
+    social_icon: LinkedLn
     new_window: true

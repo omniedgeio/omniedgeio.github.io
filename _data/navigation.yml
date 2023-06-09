@@ -1,8 +1,8 @@
-- name: About
-  link: /about/
+- name: Project
+  link: #projects
   new_window: false
   highlight: false
 - name: Contact
-  link: /contact/
+  link: #contact
   new_window: false
   highlight: false
