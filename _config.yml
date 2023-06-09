@@ -94,6 +94,10 @@ _select_data:
     - Twitter
     - YouTube
     - RSS
+    - Contact
+    - Email
+    - Location
+    - Mobile
 
 _comments:
   map: Update the map location and display settings.
