@@ -37,8 +37,9 @@
 							<li>Email: y.qian@omniedge.io</li>
 							<li>Tel: +1 864 451 4066</li>
 					</ul>
-					{% for column in site.data.footer %}
+					
 					<ul class="footer-links">
+						{% for column in site.data.footer %}
 						{% for link in column.links %}
 							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
 								{% if link.social_icon %}
@@ -46,8 +47,8 @@
 								{% endif %}
 								{{ link.name }}</a></li>
 						{% endfor %}
+						{% endfor %}
 					</ul>
-					{% endfor %}
 				</div>
 				<p class="copyright">&copy; {{ site.time | date: '%Y' }} OmniEdge Inc. Austin, TX.</p>
 			</div>
