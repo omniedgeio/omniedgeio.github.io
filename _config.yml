@@ -25,10 +25,6 @@ social:
 
 timezone: Etc/UTC
 
-collections:
-  staff_members:
-    _hide_content: true
-
 paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
@@ -45,28 +41,12 @@ defaults:
           height: 2500
   - scope:
       path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  - scope:
-      path: ""
     values:
       layout: "page"
   - scope:
       path: "index.html"
     values:
       layout: "default"
-  - scope:
-      path: "contact.html"
-    values:
-      full_width: true
-
-jekyll-archives:
-  enabled:
-    - categories
 
 plugins:
   - jekyll-archives
@@ -80,9 +60,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
 
 _select_data:
   social_icons:
