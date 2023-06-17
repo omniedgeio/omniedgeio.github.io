@@ -10,6 +10,22 @@
   link: /
   new_window: false
   highlight: false
+- name: ES
+  link: /es/index.html
+  new_window: false
+  highlight: false
+- name: DE
+  link: /de/index.html
+  new_window: false
+  highlight: false
+- name: JP
+  link: /jp/index.html
+  new_window: false
+  highlight: false
+- name: KR
+  link: /kr/index.html
+  new_window: false
+  highlight: false
 - name: 中文
   link: /zh/index.html
   new_window: false
