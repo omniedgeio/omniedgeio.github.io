@@ -6,3 +6,11 @@
   link: /#contact
   new_window: false
   highlight: false
+- name: EN
+  link: /
+  new_window: false
+  highlight: false
+- name: 中文
+  link: /zh/index.html
+  new_window: false
+  highlight: false
