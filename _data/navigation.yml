@@ -1,5 +1,5 @@
 - name: Books
-  link: https://books.omniedge.io
+  link: /books/
   new_window: false
   highlight: true
 - name: Projects
