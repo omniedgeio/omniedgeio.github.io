@@ -1,11 +1,25 @@
 ---
-layout: book_default
+layout: book_detail
 ---
-<book>
-<div class="flex min-h-screen flex-col items-center justify-center p-6 md:p-12 lg:p-24 bg-gradient-to-br from-gray-900 via-teal-900 to-gray-900 text-white">
-  <div class="w-full max-w-6xl font-mono text-sm">
-    <h1 class="text-2xl font-semibold text-center mb-4">{{ page.title }}</h1>
-    {{ content }}
-  </div>
-</div>
-</book>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/images/styles_book.css">
+</head>
+<body>
+  <main class="flex min-h-screen flex-col items-center justify-center p-6 md:p-12 lg:p-24 bg-gradient-to-br from-gray-900 via-teal-900 to-gray-900 text-white">
+    <div class="z-10 w-full max-w-6xl font-mono text-sm flex flex-col items-center">
+      <h1 class="text-2xl font-semibold text-center mb-4">{{ page.title }}</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+        <div class="flex flex-col items-center justify-center w-full h-full">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
