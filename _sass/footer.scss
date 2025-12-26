@@ -1,7 +1,9 @@
+// Apple-style footer
+
 .footer-links {
-	margin: 10px;
+	margin: 8px;
 	padding: 0;
-	min-width: 300px;
+	min-width: 200px;
 
 	@media #{$tablet} {
 		-webkit-flex: 1 0 180px;
@@ -10,33 +12,39 @@
 
 	li {
 		list-style: none;
-		margin: 15px auto;
+		margin: 12px auto;
+		font-size: 0.875rem;
 
 		@media #{$tablet} {
 			max-width: 300px;
 		}
+
 		a {
+			color: $secondary-brand-color;
+			transition: color 0.2s ease;
 
 			&:hover {
 				text-decoration: none;
+				color: $brand-color;
 			}
+
 			svg {
-				fill: #999;
-				margin-right: 10px;
+				fill: $secondary-brand-color;
+				margin-right: 8px;
 				transition: fill 0.2s ease;
 				vertical-align: middle;
 				position: relative;
-				top: -2px;
-				width: 22px;
-				height: 22px;
+				top: -1px;
+				width: 20px;
+				height: 20px;
 			}
 
 			&:hover svg {
-				fill: #fff;
+				fill: $brand-color;
 			}
 
 			&.twitter-icon:hover svg {
-				fill: #55acee;
+				fill: #1da1f2;
 			}
 
 			&.google-plus-icon:hover svg {
@@ -44,11 +52,11 @@
 			}
 
 			&.youtube-icon:hover svg {
-				fill: #cd201f;
+				fill: #ff0000;
 			}
 
 			&.instagram-icon:hover svg {
-				fill: #f167f5;
+				fill: #e4405f;
 			}
 
 			&.linkedin-icon:hover svg {
@@ -67,52 +75,62 @@
 }
 
 footer {
-	padding: 50px 0 50px 0;
-	font-size: 1.1em;
+	padding: 40px 0 32px;
+	font-size: 0.875rem;
 	position: relative;
-	background: #1E1E1E;
-	color: #fff;
+	background: $background-light;
+	color: $secondary-brand-color;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
 
 	.copyright {
-		font-size: .8em;
-		margin: 0 auto;
-		
+		font-size: 0.75rem;
+		margin: 24px auto 0;
+		color: $secondary-brand-color;
+
 		@media #{$tablet} {
 			text-align: center;
 		}
-
 	}
-	
+
 	&,
 	a {
-		color: #999;
+		color: $secondary-brand-color;
 	}
 
 	h2 {
-		font-size: 1.4em;
-		margin: 30px 0;
-		color: #ccc;
+		font-size: 1rem;
+		font-weight: 600;
+		margin: 24px 0 12px;
+		color: $brand-color;
 	}
 
 	.footer-columns {
 		@extend %flexbox;
 		@include flex-flow(wrap);
-		margin: -10px -10px 10px -10px;
+		margin: -8px;
+		justify-content: center;
+
+		@media #{$desktop} {
+			justify-content: space-between;
+		}
 	}
 
 	a {
 		text-decoration: none;
 
 		&:hover {
-			color: #fff;
+			color: $brand-color;
 		}
 	}
 
 	.legal-line {
 		width: 100%;
-		padding: 30px 0;
-		margin: 0;
-		background-color: #222527;
+		padding: 24px 0;
+		margin: 24px 0 0 0;
+		background-color: transparent;
+		border-top: 1px solid rgba(0, 0, 0, 0.08);
+		text-align: center;
+		font-size: 0.75rem;
 
 		a {
 			font-weight: 500;

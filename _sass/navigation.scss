@@ -1,13 +1,16 @@
+// Apple-style navigation
+
 .nav-open nav {
-	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	padding: 10px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 16px 0;
+
 	a {
 		display: block;
 	}
 
 	@media #{$mid-point} {
 		border: 0;
-		padding: 0 20px;
+		padding: 0;
 
 		a {
 			display: inline;
@@ -16,71 +19,78 @@
 }
 
 nav {
-	text-transform: uppercase;
-	font-size: .8em;
+	font-size: 0.875rem;
+	font-weight: 400;
 	width: 100%;
+	letter-spacing: 0;
 
 	@media #{$mid-point} {
 		text-align: right;
 		position: absolute;
-		top: 13px;
+		top: 12px;
 		right: 0;
-		padding: 0 20px;
+		padding: 0 24px;
 	}
 
-
 	a {
-		margin: 0 3px;
-		padding: 20px 10px;
-		border-bottom: 1px solid rgba(255,255,255,0);
-		color: rgba(255,255,255,.8);
-		transition: .2s ease-in-out;
+		margin: 0 4px;
+		padding: 8px 12px;
+		border-radius: 8px;
+		color: $brand-color;
+		transition: background-color 0.2s ease, color 0.2s ease;
 		display: none;
+		text-decoration: none;
 
 		@media #{$mid-point} {
 			display: inline;
-			padding: 10px;
 		}
 
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.05);
+			color: $brand-color;
+		}
 
 		&.nav-toggle {
 			display: inline;
 			position: absolute;
-			right: 10px;
-			top: -22px;
-			font-size: 1.9em;
+			right: 16px;
+			top: -18px;
+			font-size: 1.5em;
 			border: 0;
+			padding: 8px;
+			background: none;
 
 			@media #{$mid-point} {
 				display: none;
 			}
 
 			&:hover {
-				border: 0;
+				background: rgba(0, 0, 0, 0.05);
 			}
 		}
-	}
-
-	a:hover {
-
-		border-bottom: 1px solid rgba(255,255,255,.3);
-		color: #fff;
 	}
 
 	@media #{$mid-point} {
 		a.highlight {
-			border: 1px #ccc solid;
-			border-radius: 5px;
+			background: $accent-color;
+			color: #fff;
+			border-radius: 980px;
+			padding: 8px 16px;
 
 			&:hover {
-				background: #fff;
-				color: $brand-color;
+				background: darken($accent-color, 8%);
+				color: #fff;
+			}
+
+			// Keep white text when highlight is also active
+			&.active {
+				color: #fff;
 			}
 		}
 	}
 
-	a.active {
-		color: #fff;
+	// Active state for non-highlighted links
+	a.active:not(.highlight) {
+		color: $accent-color;
 	}
-
 }

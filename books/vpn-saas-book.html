@@ -5,66 +5,59 @@ layout: book_detail
 permalink: /books/vpn-saas-book/
 ---
 
-	
-	  <div className="relative w-full max-w-md mb-8 shadow-lg rounded-md overflow-hidden border-2 border-purple-500">
-		<Image
-		src="{{ site.baseurl }}/images/SaaS_Book_Cover.webp"
-		  alt="Book Cover - VPN SaaS"
-		  width={400}
-		  height={900}
-		  priority
-		  className="object-cover w-full h-auto"
-		/>
-	  </div>
-	  <a href="https://www.amazon.com/Building-Enterprise-Peer-Peer-Scratch-ebook/dp/B0F8YSG1WW">
-		<button class="bg-purple-600 hover:bg-purple-700 transition text-white font-semibold px-6 py-3 rounded-lg shadow-md mt-2">
-		Buy from Amazon
-		</button>
-		</a>
-
+<div class="book-detail-layout">
+	<div class="book-detail-cover">
+		<img src="{{ site.baseurl }}/images/SaaS_Book_Cover.webp" alt="VPN SaaS Book Cover" class="book-cover" />
+		<div class="book-detail-cta">
+			<a href="https://www.amazon.com/Building-Enterprise-Peer-Peer-Scratch-ebook/dp/B0F8YSG1WW" class="button"
+				target="_blank" rel="noopener">Buy on Amazon</a>
+		</div>
 	</div>
-	<div className="z-10 mt-10 w-full max-w-3xl items-center justify-center font-mono text-sm flex flex-col bg-black bg-opacity-50 p-8 rounded-lg shadow-xl backdrop-blur-sm">
-<p className="text-lg md:text-xl text-center mb-4 text-gray-300">
-Preface
-</p>
 
-<div className="relative w-full max-w-md mb-8 shadow-lg rounded-md overflow-hidden border-0 border-purple-500">
-		<Image
-		  src="{{ site.baseurl }}/images/OmniEdge-clients.webp"
-		  alt="Book Cover - VPN SaaS"
-		  width={600}
-		  height={900}
-		  priority
-		  className="object-cover w-full h-auto"
-		/>
-	  </div>
-<p className="text-md text-left mb-8 text-gray-400 px-4">
+	<div class="book-detail-content">
+		<p class="book-label">Enterprise Guide</p>
 
-In today's interconnected world, secure and efficient networking solutions are essential for enterprises of all sizes. Traditional VPN solutions, while effective, often struggle with scalability, management complexity, and performance limitations. Peer-to-peer VPN technologies have emerged as a compelling alternative, offering improved performance, simplified management, and enhanced scalability.
-</p>
-<p className="text-md text-left mb-8 text-gray-400 px-4">
-This book provides a comprehensive guide to building an enterprise-grade peer-to-peer VPN Software as a Service (SaaS) from scratch. Drawing on the architectures and implementations of leading solutions like Tailscale, Netbird, and OmniEdge, we explore both the technical foundations and business considerations necessary for success in this space.
-</p>
-<p className="text-md text-left mb-8 text-gray-400 px-4">
-	Written by OmniEdge engineers, this practical guide distills real-world experience from deploying enterprise VPN services in highly regulated environments. If you're building your own secure networking SaaS—or just want to understand how it's done—this book is for you.
-  </p>
+		<h2>About This Book</h2>
+		<p>In today's interconnected world, secure and efficient networking solutions are essential for enterprises of
+			all sizes. Traditional VPN solutions often struggle with scalability, management complexity, and performance
+			limitations. Peer-to-peer VPN technologies have emerged as a compelling alternative.</p>
 
-<p className="text-md text-left mb-8 text-gray-400 px-4">
-Whether you're a software engineer looking to understand the intricacies of modern VPN technologies, a network administrator seeking insights into peer-to-peer networking, or an entrepreneur considering entering the VPN SaaS market, this book offers valuable knowledge and practical guidance.
-  </p>
-  </div>
+		<p>This book provides a comprehensive guide to building an enterprise-grade peer-to-peer VPN Software as a
+			Service (SaaS) from scratch. Drawing on the architectures and implementations of leading solutions like
+			Tailscale, Netbird, and OmniEdge, we explore both the technical foundations and business considerations
+			necessary for success.</p>
 
-	<div className="z-10 mt-10 w-full max-w-3xl items-center justify-center font-mono text-sm flex flex-col bg-black bg-opacity-50 p-8 rounded-lg shadow-xl backdrop-blur-sm">
-<p className="text-lg md:text-xl text-center mb-4 text-gray-300">
-How to Contact Us
-</p>
-<p className="text-md text-left mb-8 text-gray-400 px-4">
-Email <strong><a href="mailto:bookquestions@omniedge.io">bookquestions@omneidge.io</a> </strong>to comment or ask technical questions about this book.
-<br></br>
-For news and information about our books and courses, visit: <strong><a href="https://omniedge.io/books/">https://omniedge.io/books/</a></strong>.
-<br></br>
-Follow us on Twitter: <strong><a href="https://twitter.com/omniedgeio">@omniedge</a></strong>
-</p>
+		<h2>What You'll Learn</h2>
+		<ul class="book-highlights-detail">
+			<li><strong>P2P Network Architecture:</strong> Understand the fundamentals of peer-to-peer networking and
+				how it applies to enterprise VPN solutions.</li>
+			<li><strong>NAT Traversal Techniques:</strong> Master STUN, TURN, and ICE protocols for establishing
+				connections across firewalls and NAT devices.</li>
+			<li><strong>WireGuard Integration:</strong> Build on the WireGuard protocol for fast, secure, and modern VPN
+				connectivity.</li>
+			<li><strong>Multi-tenant SaaS Design:</strong> Architect your platform to serve multiple enterprise
+				customers securely and efficiently.</li>
+			<li><strong>Control Plane Development:</strong> Build the orchestration layer that manages your distributed
+				VPN network.</li>
+			<li><strong>Enterprise Security Patterns:</strong> Implement authentication, authorization, and audit
+				logging for enterprise compliance.</li>
+		</ul>
 
+		<h2>Who Should Read This</h2>
+		<p>Whether you're a software engineer looking to understand modern VPN technologies, a network administrator
+			seeking insights into peer-to-peer networking, or an entrepreneur considering entering the VPN SaaS market,
+			this book offers valuable knowledge and practical guidance.</p>
 
+		<h2>About the Author</h2>
+		<p>Written by OmniEdge engineers, this practical guide distills real-world experience from deploying enterprise
+			VPN services in highly regulated environments. The team has built and operated OmniEdge, an open-source P2P
+			VPN platform used by organizations worldwide.</p>
+
+		<div class="book-contact">
+			<h3>Contact</h3>
+			<p>Email <a href="mailto:y.qian@omniedge.io">y.qian@omniedge.io</a> to comment or ask questions about this
+				book.</p>
+			<p>For more books and resources, visit: <a href="https://omniedge.io/books/">omniedge.io/books</a></p>
+		</div>
+	</div>
 </div>

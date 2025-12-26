@@ -5,76 +5,60 @@ layout: book_detail
 permalink: /books/fashion-ai-book/
 ---
 
-	  <div className="relative w-full max-w-md mb-8 shadow-lg rounded-md overflow-hidden border-2 border-teal-500">
-		<Image
-		src="{{ site.baseurl }}/images/Fashion_AI_Book_Cover.webp"
-		  alt="Book Cover - How to Build Fashion AI SaaS From Scratch"
-		  width={600}
-		  height={900}
-		  priority
-		  className="object/events-cover w-full h-auto"
-		/>
-	  </div>
-	  <p className="text-md text-left mb-8 text-gray-400 px-4">
-		From data pipelines and model training to deployment and scaling, this guide covers everything you need to know. Get insights into the latest AI techniques transforming the fashion industry.
-	  </p>
-	  <p className="text-md text-left mb-8 text-gray-400 px-4">
-		This book is not a theoretical exploration. It is a practical, technical guide born directly from real-world experience. Over the course of a year and a half, I built and operated DeepFashion.us, a Fashion AI SaaS platform that successfully merged cutting-edge generative AI with commercial utility—and ultimately achieved a successful exit.
-	  </p>
-	  <a href="https://www.amazon.com/build-Fashion-Scratch-step-step-ebook/dp/B0F8WBNSPP">
-			<button class="bg-teal-600 hover:bg-teal-700 transition text-white font-semibold px-6 py-3 rounded-lg shadow-md">
-	  Buy from Amazon
-		</button>
-	</a>
-	</div>
-	
-	<div className="z-10 mt-10 w-full max-w-3xl items-center justify-center font-mono text-sm flex flex-col bg-black bg-opacity-50 p-8 rounded-lg shadow-xl backdrop-blur-sm">
-	<p className="text-lg md:text-xl text-center mb-4 text-gray-300">
-		Preface
-	  </p>
-
-	  <p className="text-md text-left mb-8 text-gray-400 px-4">
-	  Fashion is meant to soothe the soul.
-	  </p>
-	  <div className="relative w-full max-w-md mb-8 shadow-lg rounded-md overflow-hidden border-0 border-purple-500">
-		<Image
-		  src="{{ site.baseurl }}/images/DF_Dashboard.webp"
-		  alt="Book Cover - VPN SaaS"
-		  width={600}
-		  height={900}
-		  priority
-		  className="object-cover w-full h-auto"
-		/>
-	  </div>
-	  <p className="text-md text-left mb-8 text-gray-400 px-4">
-	  Fashion has always been a visual language—fluid, expressive, and perpetually evolving. In recent years, a new dialect has emerged within this language: Artificial Intelligence. Among the most transformative tools in this space is Generative AI, with models like Stable Diffusion unlocking powerful new possibilities for creativity, personalization, and operational efficiency. These technologies are already beginning to reshape how fashion is designed, marketed, and experienced.
-		</p>
-		<p className="text-md text-left mb-8 text-gray-400 px-4">
-		This book,"How to Build Fashion AI SaaS from Scratch: Building Your Fashion AI SaaS with Stable Diffusion", is not a theoretical exploration. It is a practical, technical guide born directly from real-world experience. Over the course of a year and a half, I built and operated <a href="http://x.com/deepfashionhq">DeepFashion.us</a>, a Fashion AI SaaS platform that successfully merged cutting-edge generative AI with commercial utility—and ultimately achieved a successful exit.
-		</p>
-	
-		<p className="text-md text-left mb-8 text-gray-400 px-4">
-		What you’ll find in these pages is the distilled blueprint of that journey: the strategies, technologies, and insights that made DeepFashion.us work.
-		</p>
-		<p className="text-md text-left mb-8 text-gray-400 px-4">
-		The goal of this book is to equip fashion technologists, designers, and entrepreneurs with the tools and understanding needed to build their own Fashion AI SaaS platforms. Drawing from the DeepFashion.us experience, we go beyond surface-level tutorials and dive deep into the mechanics of deploying AI in the real world—starting with fine-tuning Stable Diffusion to align with specific brand aesthetics and seasonal design cues.
-		</p>
-		<p className="text-md text-left mb-8 text-gray-400 px-4">
-We also address one of the most commercially impactful use cases: virtual try-on technology. Creating realistic, responsive, and brand-aware try-on experiences is central to modern fashion e-commerce, and we walk through how to build such systems from scratch.
-	  </p>
-
+<div class="book-detail-layout">
+	<div class="book-detail-cover">
+		<img src="{{ site.baseurl }}/images/Fashion_AI_Book_Cover.webp" alt="Fashion AI Book Cover"
+			class="book-cover" />
+		<div class="book-detail-cta">
+			<a href="https://www.amazon.com/build-Fashion-Scratch-step-step-ebook/dp/B0F8WBNSPP" class="button"
+				target="_blank" rel="noopener">Buy on Amazon</a>
+		</div>
 	</div>
 
-	<div className="z-10 mt-10 w-full max-w-3xl items-center justify-center font-mono text-sm flex flex-col bg-black bg-opacity-50 p-8 rounded-lg shadow-xl backdrop-blur-sm">
-<p className="text-lg md:text-xl text-center mb-4 text-gray-300">
-How to Contact Us
-</p>
-<p className="text-md text-left mb-8 text-gray-400 px-4">
-Email <strong><a href="mailto:bookquestions@omniedge.io">bookquestions@omneidge.io</a> </strong>to comment or ask technical questions about this book.
-<br></br>
-For news and information about our books and courses, visit: <strong><a href="https://omniedge.io/books">https://omniedge.io/books/</a></strong>.
-<br></br>
-Follow us on Twitter: <strong><a href="https://twitter.com/omniedgeio">@omniedge</a></strong>
-</p>
+	<div class="book-detail-content">
+		<p class="book-label">AI Guide</p>
+
+		<h2>About This Book</h2>
+		<p>This is not a theoretical exploration. It is a practical, technical guide born directly from real-world
+			experience. Over the course of a year and a half, I built and operated DeepFashion.us, a Fashion AI SaaS
+			platform that successfully merged cutting-edge generative AI with commercial utility—and ultimately achieved
+			a successful exit.</p>
+
+		<p>From data pipelines and model training to deployment and scaling, this guide covers everything you need to
+			know. Get insights into the latest AI techniques transforming the fashion industry.</p>
+
+		<h2>What You'll Learn</h2>
+		<ul class="book-highlights-detail">
+			<li><strong>Generative AI Fundamentals:</strong> Master the core concepts of Stable Diffusion and how to
+				apply them to fashion design and visualization.</li>
+			<li><strong>Fine-tuning Models:</strong> Learn to customize AI models to align with specific brand
+				aesthetics and seasonal design cues.</li>
+			<li><strong>Virtual Try-On Technology:</strong> Build realistic, responsive, and brand-aware virtual try-on
+				experiences for e-commerce.</li>
+			<li><strong>Data Pipeline Architecture:</strong> Design scalable data pipelines for training and serving
+				fashion AI models.</li>
+			<li><strong>Cloud Deployment:</strong> Deploy your Fashion AI platform to production with best practices for
+				reliability and cost optimization.</li>
+			<li><strong>Monetization Strategies:</strong> Turn your Fashion AI technology into a sustainable SaaS
+				business.</li>
+		</ul>
+
+		<h2>Who Should Read This</h2>
+		<p>This book is for fashion technologists, designers, and entrepreneurs who want to build their own Fashion AI
+			SaaS platforms. Whether you're a developer exploring AI applications in fashion, a designer curious about
+			generative tools, or an entrepreneur looking for your next venture, this guide provides the complete
+			blueprint.</p>
+
+		<h2>About the Author</h2>
+		<p>Yong Qian is the founder of DeepFashion.us, a Fashion AI SaaS platform that achieved a successful exit. With
+			deep expertise in both AI/ML engineering and fashion technology, Yong brings practical, battle-tested
+			insights from building and operating a real-world Fashion AI business.</p>
+
+		<div class="book-contact">
+			<h3>Contact</h3>
+			<p>Email <a href="mailto:y.qian@omniedge.io">y.qian@omniedge.io</a> to comment or ask questions about this
+				book.</p>
+			<p>For more books and resources, visit: <a href="https://omniedge.io/books/">omniedge.io/books</a></p>
+		</div>
+	</div>
 </div>
-
