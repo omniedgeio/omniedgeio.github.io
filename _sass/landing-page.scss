@@ -49,30 +49,59 @@
 }
 
 .hero {
+	background: $background-white;
 	color: $brand-color;
 	text-align: center;
-	background: $background-white;
-	padding: 60px 24px 80px;
+	padding: 100px 24px 120px;
 
 	@media #{$desktop} {
-		padding: 100px 40px 120px;
+		padding: 140px 40px 160px;
 	}
 
 	h1 {
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 3.5rem;
+		letter-spacing: -0.015em;
+		line-height: 1.05;
+		margin-bottom: 32px;
+
+		@media #{$desktop} {
+			font-size: 4.8rem;
+		}
 	}
 
 	p {
 		color: $secondary-brand-color;
 		font-size: 1.25rem;
-		max-width: 600px;
+		max-width: 750px;
 		margin-left: auto;
 		margin-right: auto;
+		line-height: 1.4;
 
 		@media #{$desktop} {
 			font-size: 1.5rem;
+		}
+	}
+
+	.cta-container {
+		margin-top: 56px;
+
+		a {
+			background: $brand-color !important;
+			border-radius: 980px !important;
+			padding: 18px 42px !important;
+			font-size: 1.25rem;
+			font-weight: 600;
+			transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+			display: inline-block;
+			color: #fff !important;
+
+			&:hover {
+				background: lighten($brand-color, 15%) !important;
+				transform: scale(1.02);
+			}
 		}
 	}
 }
