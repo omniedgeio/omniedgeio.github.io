@@ -52,7 +52,7 @@
 	background: $background-white;
 	color: $brand-color;
 	text-align: center;
-	padding: 100px 24px 120px;
+	padding: 60px 24px 80px;
 
 	@media #{$desktop} {
 		padding: 140px 40px 160px;
@@ -62,19 +62,21 @@
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 		letter-spacing: -0.015em;
-		line-height: 1.05;
-		margin-bottom: 32px;
+		line-height: 1.1;
+		margin-bottom: 24px;
 
 		@media #{$desktop} {
 			font-size: 4.8rem;
+			line-height: 1.05;
+			margin-bottom: 32px;
 		}
 	}
 
 	p {
 		color: $secondary-brand-color;
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		max-width: 750px;
 		margin-left: auto;
 		margin-right: auto;
@@ -86,7 +88,11 @@
 	}
 
 	.cta-container {
-		margin-top: 56px;
+		margin-top: 40px;
+
+		@media #{$desktop} {
+			margin-top: 56px;
+		}
 
 		a {
 			background: $brand-color !important;
@@ -102,6 +108,37 @@
 				background: lighten($brand-color, 15%) !important;
 				transform: scale(1.02);
 			}
+		}
+	}
+}
+
+.trust-bar {
+	padding: 40px 0;
+	background: $background-white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	text-align: center;
+
+	p {
+		font-size: 0.875rem;
+		color: $secondary-brand-color;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-bottom: 24px;
+	}
+
+	.logo-grid {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+		opacity: 0.6;
+		filter: grayscale(100%);
+		flex-wrap: wrap;
+
+		span {
+			font-weight: 700;
+			font-size: 1.25rem;
+			color: #ccc;
 		}
 	}
 }
